@@ -1,0 +1,72 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the font family for the entire document */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the map container */
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 75%;
+}
+
+/* Style for the sidebar */
+#sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  right: 0;
+  background-color: #f8f8f8;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Style for the sidebar header */
+#sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Style for the filters and totals containers */
+#filters,
+#totals {
+  margin-bottom: 20px;
+}
+
+/* Style for individual filter elements (assuming they are checkboxes) */
+.filter-item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for the totals display */
+.total-item {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Add some responsiveness to the layout */
+@media (max-width: 768px) {
+
+  #map,
+  #sidebar {
+    width: 100%;
+    height: 50%;
+  }
+
+  #sidebar {
+    top: 50%;
+    bottom: auto;
+    padding: 10px;
+  }
+}

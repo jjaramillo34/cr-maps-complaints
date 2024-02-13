@@ -6,12 +6,6 @@ mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN;
 
 console.log("mapboxgl.accessToken", mapboxgl.accessToken);
 
-mapboxgl.setRTLTextPlugin(
-  "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js",
-  null,
-  true
-);
-
 // Initialize the map
 const map = new mapboxgl.Map({
   container: "map", // container ID

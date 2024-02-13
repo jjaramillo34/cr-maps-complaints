@@ -1,3 +1,12 @@
 # ignore config.js
 config.js
 ```
+#env file
+.env
+
+#node_modules
+node_modules
+
+#config.js
+config.js
+

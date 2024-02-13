@@ -1,7 +1,10 @@
 // Assuming you have your Mapbox access token
 
-mapboxgl.accessToken = "";
+mapboxgl.accessToken = axios.get("/mapboxToken").then((res) => {
+  return res.data;
+});
 
+console.log(mapboxgl.accessToken);
 // Initialize the map
 const map = new mapboxgl.Map({
   container: "map", // container ID
